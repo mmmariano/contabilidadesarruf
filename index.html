@@ -1389,6 +1389,9 @@ footer { background: #030303; padding: 60px 0 28px; position: relative; z-index:
 <!-- ═══════════════════════════════════════
    LOCALIZAÇÃO (VERSÃO OTIMIZADA)
 ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════
+   LOCALIZAÇÃO - VERSÃO FINAL CORRIGIDA
+═══════════════════════════════════════ -->
 <section class="localizacao" id="contato" aria-label="Localização e Contato">
   <div class="container">
     <div class="sec-head reveal">
@@ -1399,22 +1402,23 @@ footer { background: #030303; padding: 60px 0 28px; position: relative; z-index:
     </div>
     
     <div class="loc-grid">
+      <!-- COLUNA DA ESQUERDA: INFORMAÇÕES -->
       <div class="reveal">
         <div class="contato-lista">
           
-          <!-- ITEM: ENDEREÇO (CLICÁVEL PARA GPS) -->
+          <!-- ITEM: ENDEREÇO (LINK DE ROTA DIRETA PARA GPS) -->
           <div class="contato-item">
             <div class="contato-ico">📍</div>
             <div>
-              <div class="contato-lbl">Endereço (Clique para abrir o GPS)</div>
-              <a href="https://www.google.com/maps/search/?api=1&query=Av.+Sete+de+Setembro+1428+Mandaguacu+PR+87160-039" target="_blank" rel="noopener">
+              <div class="contato-lbl">Endereço (Toque para abrir o GPS)</div>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Sete+de+Setembro,+1428+-+Centro+Norte,+Mandaguaçu+-+PR,+87160-039" target="_blank" rel="noopener">
                 <div class="contato-val">
                   Av. Sete de Setembro, 1428<br>
                   Centro Norte · Mandaguaçu - PR<br>
                   CEP: 87160-039
                 </div>
-                <div style="color: var(--ouro); font-size: 0.75rem; text-decoration: underline; margin-top: 5px; font-weight: 600;">
-                  <i class="fas fa-external-link-alt"></i> VER NO GOOGLE MAPS
+                <div style="color: var(--ouro); font-size: 0.75rem; text-decoration: underline; margin-top: 5px; font-weight: 700; letter-spacing: 1px;">
+                  INICIAR ROTA NO MAPA
                 </div>
               </a>
             </div>
@@ -1458,12 +1462,12 @@ footer { background: #030303; padding: 60px 0 28px; position: relative; z-index:
         <div style="margin-top:28px; display:flex; gap:12px; flex-wrap:wrap;">
           <a href="https://wa.me/5544998069950?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita."
              target="_blank" rel="noopener" class="btn-gold">💬 Falar no WhatsApp</a>
-          <a href="https://www.google.com/maps/search/?api=1&query=Av.+Sete+de+Setembro+1428+Mandaguacu+PR+87160-039" 
-             target="_blank" rel="noopener" class="btn-outline">🗺️ Como Chegar</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Sete+de+Setembro,+1428+-+Centro+Norte,+Mandaguaçu+-+PR,+87160-039" 
+             target="_blank" rel="noopener" class="btn-outline">🗺️ Como Chegar (Maps)</a>
         </div>
       </div>
 
-      <!-- MAPA INTERATIVO CORRIGIDO -->
+      <!-- COLUNA DA DIREITA: MAPA INTERATIVO -->
       <div class="mapa-container reveal">
         <div class="mapa-barra">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="#080808"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
@@ -1482,7 +1486,8 @@ footer { background: #030303; padding: 60px 0 28px; position: relative; z-index:
     </div>
   </div>
 </section>
-<!-- ═══════════════════════════════════════
+  
+  <!-- ═══════════════════════════════════════
    REDES SOCIAIS
 ═══════════════════════════════════════ -->
 <section class="redes" aria-label="Redes Sociais">
