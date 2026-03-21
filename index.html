@@ -1386,9 +1386,8 @@ footer { background: #030303; padding: 60px 0 28px; position: relative; z-index:
     </div>
   </div>
 </section>
-
 <!-- ═══════════════════════════════════════
-   LOCALIZAÇÃO
+   LOCALIZAÇÃO (VERSÃO OTIMIZADA)
 ═══════════════════════════════════════ -->
 <section class="localizacao" id="contato" aria-label="Localização e Contato">
   <div class="container">
@@ -1398,26 +1397,43 @@ footer { background: #030303; padding: 60px 0 28px; position: relative; z-index:
       <p class="sec-sub">Visite-nos em Mandaguaçu ou fale conosco online — estamos sempre prontos para atender.</p>
       <div class="gold-line"></div>
     </div>
+    
     <div class="loc-grid">
-
       <div class="reveal">
         <div class="contato-lista">
+          
+          <!-- ITEM: ENDEREÇO (CLICÁVEL PARA GPS) -->
           <div class="contato-item">
             <div class="contato-ico">📍</div>
             <div>
-              <div class="contato-lbl">Endereço</div>
-              <div class="contato-val">Av. Sete de Setembro, 1428<br>Centro Norte · Mandaguaçu - PR<br>CEP: 87160-039</div>
+              <div class="contato-lbl">Endereço (Clique para abrir o GPS)</div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Av.+Sete+de+Setembro+1428+Mandaguacu+PR+87160-039" target="_blank" rel="noopener">
+                <div class="contato-val">
+                  Av. Sete de Setembro, 1428<br>
+                  Centro Norte · Mandaguaçu - PR<br>
+                  CEP: 87160-039
+                </div>
+                <div style="color: var(--ouro); font-size: 0.75rem; text-decoration: underline; margin-top: 5px; font-weight: 600;">
+                  <i class="fas fa-external-link-alt"></i> VER NO GOOGLE MAPS
+                </div>
+              </a>
             </div>
           </div>
+
+          <!-- ITEM: WHATSAPP (COM MENSAGEM AUTOMÁTICA) -->
           <div class="contato-item">
             <div class="contato-ico">📱</div>
             <div>
               <div class="contato-lbl">WhatsApp</div>
               <div class="contato-val">
-                <a href="https://wa.me/5544998069950" target="_blank" rel="noopener">(44) 99806-9950</a>
+                <a href="https://wa.me/5544998069950?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20Contabilidade%20Sarruf." target="_blank" rel="noopener">
+                  (44) 99806-9950
+                </a>
               </div>
             </div>
           </div>
+
+          <!-- ITEM: EMAIL -->
           <div class="contato-item">
             <div class="contato-ico">✉️</div>
             <div>
@@ -1427,15 +1443,8 @@ footer { background: #030303; padding: 60px 0 28px; position: relative; z-index:
               </div>
             </div>
           </div>
-          <div class="contato-item">
-            <div class="contato-ico">📷</div>
-            <div>
-              <div class="contato-lbl">Instagram</div>
-              <div class="contato-val">
-                <a href="https://www.instagram.com/contabilidade_sarruf" target="_blank" rel="noopener">@contabilidade_sarruf</a>
-              </div>
-            </div>
-          </div>
+
+          <!-- ITEM: HORÁRIO -->
           <div class="contato-item">
             <div class="contato-ico">🕐</div>
             <div>
@@ -1444,31 +1453,35 @@ footer { background: #030303; padding: 60px 0 28px; position: relative; z-index:
             </div>
           </div>
         </div>
+
+        <!-- BOTÕES DE AÇÃO RÁPIDA -->
         <div style="margin-top:28px; display:flex; gap:12px; flex-wrap:wrap;">
-          <a href="https://wa.me/5544998069950?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20na%20Contabilidade%20Sarruf."
-             target="_blank" rel="noopener" class="btn-gold">💬 WhatsApp</a>
-          <a href="mailto:ssarruf.2022@gmail.com" class="btn-outline">✉️ E-mail</a>
+          <a href="https://wa.me/5544998069950?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita."
+             target="_blank" rel="noopener" class="btn-gold">💬 Falar no WhatsApp</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Av.+Sete+de+Setembro+1428+Mandaguacu+PR+87160-039" 
+             target="_blank" rel="noopener" class="btn-outline">🗺️ Como Chegar</a>
         </div>
       </div>
 
+      <!-- MAPA INTERATIVO CORRIGIDO -->
       <div class="mapa-container reveal">
         <div class="mapa-barra">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="#080808"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
-          Av. Sete de Setembro, 1428 · Centro Norte · Mandaguaçu - PR
+          Mandaguaçu - PR · Av. Sete de Setembro, 1428
         </div>
         <iframe
-          title="Localização Contabilidade Sarruf — Mandaguaçu PR"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.5!2d-52.1030!3d-23.3590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ede27a3b3c4f0d%3A0x0!2zMjPCsDIxJzMyLjQiUyA1MsKwMDYnMTEuNiJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr&q=Av.+Sete+de+Setembro+1428+Mandaguacu+PR"
-          allowfullscreen loading="lazy"
+          title="Localização Contabilidade Sarruf"
+          src="https://www.google.com/maps?q=Av.+Sete+de+Setembro+1428+Mandaguacu+PR+87160-039&output=embed"
+          allowfullscreen 
+          loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          aria-label="Mapa da Contabilidade Sarruf em Mandaguaçu PR">
+          style="width: 100%; height: 380px; border: none; display: block;">
         </iframe>
       </div>
 
     </div>
   </div>
 </section>
-
 <!-- ═══════════════════════════════════════
    REDES SOCIAIS
 ═══════════════════════════════════════ -->
