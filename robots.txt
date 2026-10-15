@@ -1,5 +1,22 @@
 User-agent: *
 Allow: /
+Disallow: /includes/
+Disallow: /config.php
 
-# Link para o seu sitemap
+# Buscadores de IA (GEO): permitidos
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://www.contabilidadesarruf.com.br/sitemap.xml
